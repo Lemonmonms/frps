@@ -1,21 +1,19 @@
-bindAddr = "0.0.0.0"
+bindAddr = "frps.lemondemon.sbs"
 bindPort = 7000
-#kcpBindPort = 7000
-quicBindPort = 7000
 
-vhostHTTPPort = 80
-vhostHTTPSPort = 443
+vhostHTTPPort = 82
+vhostHTTPSPort = 445
 
 transport.maxPoolCount = 2000
 transport.tcpMux = true
 transport.tcpMuxKeepaliveInterval = 60
 transport.tcpKeepalive = 7200
-transport.tls.force = false
+transport.tls.force = true
 
-webServer.addr = "0.0.0.0"
+webServer.addr = "83.229.121.144"
 webServer.port = 7500
-webServer.user = "admin"
-webServer.password = "admin"
+webServer.user = "demon"
+webServer.password = "xdzyj159357"
 webServer.pprofEnable = false
 
 log.to = "./frps.log"
@@ -24,12 +22,13 @@ log.maxDays = 3
 log.disablePrintColor = false
 
 auth.method = "token"
-auth.token = "12345678"
+auth.token = "HQUYfIEg7IZbhlXg"
 
 allowPorts = [
-  { start = 10001, end = 50000 }
+  { start = 5000, end = 50000 }
 ]
 
-maxPortsPerClient = 8
+maxPortsPerClient = 20
 udpPacketSize = 1500
 natholeAnalysisDataReserveHours = 168
+
